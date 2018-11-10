@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".ResetCodeActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:fitsSystemWindows="true"
+        android:paddingLeft="8dp"
+        android:layout_marginLeft="1dp">
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:drawableLeft="@drawable/ic_arrow_back_black_24dp"
+            android:onClick="back"/>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="37dp"
+            android:text="Reset Your Password !"
+            android:textColor="@color/colorAccent"
+            android:textSize="30sp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="65dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="140dp"
+            android:text="Enter the 4-digit code sent to your email"
+            android:textAlignment="center"
+            android:textColor="@color/colorWel"
+            android:textSize="17sp"
+            app:fontFamily="sans-serif" />
+
+        <EditText
+            android:layout_width="170dp"
+            android:layout_height="50dp"
+            android:hint="Enter 4-digit code"
+            android:layout_marginTop="200dp"
+            android:inputType="number"
+            android:layout_marginLeft="120dp"
+            android:textAlignment="center"
+            android:paddingLeft="1dp"
+            android:background="@drawable/button_bg_stroke"/>
+
+        <Button
+            android:id="@+id/dummy_button"
+            style="?metaButtonBarButtonStyle"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="350dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:text="Verify"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            android:onClick="verify"
+            android:linksClickable="true"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="410dp"
+            android:text="Resend code !"
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <FrameLayout
+        android:id="@+id/fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/message"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_marginStart="@dimen/activity_horizontal_margin"
+                        android:layout_marginTop="@dimen/activity_vertical_margin"
+                        android:text="Health Tips"
+                        android:textSize="22dp"
+                        android:textStyle="bold"
+                        app:fontFamily="@font/hammersmith_one"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="200dp"
+                        android:layout_marginTop="16dp"
+                        android:drawableRight="@drawable/ic_navigate_next_black_24dp"
+                        android:text="See All"
+                        android:textSize="15dp"
+                        android:onClick="HTSeeAll"/>
+
+
+                </LinearLayout>
+
+                <!--Heatlh Tips Section-->
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="380dp"
+                            android:layout_height="200dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="20dp"
+                            app:cardCornerRadius="8dp">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:alpha="255"
+                                android:background="@drawable/tip1" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_gravity="bottom"
+                                android:background="#2ac4ca"
+                                android:text="How To Improve Your Health With Easy Steps..."
+                                android:textAlignment="center"
+                                android:textColor="#ffff"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                app:fontFamily="@font/hammersmith_one" />
+                        </android.support.v7.widget.CardView>
+
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="380dp"
+                            android:layout_height="200dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="20dp"
+                            app:cardCornerRadius="8dp">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:alpha="255"
+                                android:background="@drawable/htip2" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_gravity="bottom"
+                                android:background="#2ac4ca"
+                                android:text="Simple Ways To Avoid From Getting Cough In Winter..."
+                                android:textAlignment="center"
+                                android:textColor="#ffff"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                app:fontFamily="@font/hammersmith_one" />
+                        </android.support.v7.widget.CardView>
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="380dp"
+                            android:layout_height="200dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="20dp"
+                            app:cardCornerRadius="8dp">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/htip1" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_gravity="bottom"
+                                android:background="#2ac4ca"
+                                android:text="Why Do You Always Feel Tired..."
+                                android:textAlignment="center"
+                                android:textColor="#ffff"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                app:fontFamily="@font/hammersmith_one" />
+                        </android.support.v7.widget.CardView>
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp">
+
+                    <TextView
+                        android:id="@+id/doctor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_marginStart="@dimen/activity_horizontal_margin"
+                        android:layout_marginTop="@dimen/activity_vertical_margin"
+                        android:text="Doctors"
+                        android:textSize="22dp"
+                        android:textStyle="bold"
+                        app:fontFamily="@font/hammersmith_one"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="230dp"
+                        android:layout_marginTop="16dp"
+                        android:drawableRight="@drawable/ic_navigate_next_black_24dp"
+                        android:text="See All"
+                        android:textSize="15dp"
+                        android:onClick="DSeeAll"/>
+
+
+                </LinearLayout>
+
+                <!--Doctor category section-->
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="180dp"
+                            android:layout_height="180dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="20dp"
+                            app:cardCornerRadius="8dp"
+
+                            >
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/car" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:background="#df1017"
+                                android:text="Cardiologist"
+                                android:textAlignment="center"
+                                android:textColor="#ffff"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                app:fontFamily="@font/hammersmith_one" />
+                        </android.support.v7.widget.CardView>
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="180dp"
+                            android:layout_height="180dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="20dp"
+                            app:cardCornerRadius="8dp">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/den" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:background="#868585"
+                                android:text="Dentist"
+                                android:textAlignment="center"
+                                android:textColor="#ffff"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                app:fontFamily="@font/hammersmith_one" />
+                        </android.support.v7.widget.CardView>
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="180dp"
+                            android:layout_height="180dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="20dp"
+                            app:cardCornerRadius="8dp">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/neuro" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:background="#a16a36"
+                                android:text="Neurologist"
+                                android:textAlignment="center"
+                                android:textColor="#ffff"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                app:fontFamily="@font/hammersmith_one" />
+                        </android.support.v7.widget.CardView>
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp">
+
+                    <TextView
+                        android:id="@+id/hospital"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_marginStart="@dimen/activity_horizontal_margin"
+                        android:layout_marginTop="@dimen/activity_vertical_margin"
+                        android:text="Hospitals"
+                        android:textSize="22dp"
+                        android:textStyle="bold"
+                        app:fontFamily="@font/hammersmith_one"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="210dp"
+                        android:layout_marginTop="16dp"
+                        android:drawableRight="@drawable/ic_navigate_next_black_24dp"
+                        android:text="See All"
+                        android:textSize="15dp"
+                        android:onClick="HSeeAll"/>
+
+
+                </LinearLayout>
+
+                <!--Hospitals category section-->
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="100dp"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="180dp"
+                            android:layout_height="200dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="20dp"
+                            app:cardCornerRadius="8dp">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="200dp"
+                                android:background="@drawable/ygh" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:background="#373636"
+                                android:text="Yangon General Hospital"
+                                android:textAlignment="center"
+                                android:textColor="#ffff"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                app:fontFamily="@font/hammersmith_one" />
+                        </android.support.v7.widget.CardView>
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="180dp"
+                            android:layout_height="200dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="20dp"
+                            app:cardCornerRadius="8dp">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/saku" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="46dp"
+                                android:layout_gravity="bottom"
+                                android:background="#373636"
+                                android:text="Sakura Hospital"
+                                android:textAlignment="center"
+                                android:textColor="#ffff"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                app:fontFamily="@font/hammersmith_one" />
+                        </android.support.v7.widget.CardView>
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="190dp"
+                            android:layout_height="200dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="20dp"
+                            app:cardCornerRadius="8dp">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/vic" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="46dp"
+                                android:layout_gravity="bottom"
+                                android:background="#373636"
+                                android:text="Victoria Hospital"
+                                android:textAlignment="center"
+                                android:textColor="#ffff"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                app:fontFamily="@font/hammersmith_one" />
+                        </android.support.v7.widget.CardView>
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    </FrameLayout>
+
+    <!--Bottom Navigation-->
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="0dp"
+        android:background="?android:attr/windowBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/navigation" />
+
+
+</android.support.constraint.ConstraintLayout>
